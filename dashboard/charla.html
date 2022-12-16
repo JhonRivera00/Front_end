@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags --> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Inicio Nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-color-blue p-3" id="menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/img/Horizontal.png" alt="Logo" class="img-logo" />
+        <img src="/img/favicon2.png" alt="Logo" class="img-logo-mini d-none me-auto" /></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse opciones-navbar" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item fs-6">
+            <a class="nav-link" aria-current="page" href="/index.html">INICIO</a>
+          </li>
+          <li class="nav-item fs-6">
+            <a class="nav-link" href="/dashboard/conocenos.html">CONOCENOS</a>
+          </li>
+          <li class="nav-item fs-6">
+            <a class="nav-link" href=""  data-bs-toggle="modal" data-bs-target="#exampleModal1" class="nav-link" aria-current="page">CHARLA</a>
+          </li>
+          <li class="nav-item fs-6">
+            <a class="nav-link" href="/dashboard/cronograma.html">CRONOGRAMA</a>
+          </li>
+          <li class="nav-item fs-6">
+            <a class="nav-link" href="/dashboard/contactanos.html">CONTACTANOS</a>
+          </li>
+        </ul>
+        <div class="navbar-nav ms-3 user">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><img src="/img/icons/person-circle.svg" alt="icon-user" /></a>
+            <ul class="dropdown-menu bg-color-blue" style="left: -120px" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item text-white"  data-bs-toggle="modal" href="" data-bs-target="#exampleModal" ><img src="/img/icons/gear.svg" alt="icon-ajustes"
+                    class="me-3" />
+                  Ajustes</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">
+                  <div class="d-inline-block position-relative">
+                    <img src="/img/icons/bell.svg" alt="icon-cerrarsesion" class="" />
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-green border  rounded-circle"></span>
+                    
+                  </div>
+                    &nbsp &nbsp Notificaciones </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="/index2.html"><img src="/img/icons/box-arrow-right.svg"
+                    alt="icon-cerrarsesion" class="me-3" />
+                  Cerrar Sesion</a>
+              </li>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal Inicio Sesion -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-2 needs-validation" action="/index.html" novalidate>
+          <div class="text-center w-100">
+            <h2 class="h2 pt-4 pb-5 f">Iniciar Sesion</h2>
+            
+          </div>
+          <!-- Nombre Usuario -->
+          <div class="col-12 mt-0" style="padding: 0 70px 0 70px;">
+            <label for="validationCustom01" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+            <div class="invalid-feedback">
+              Por favor, ingrese su nombre de usuario.
+            </div>
+          </div>
+          <!-- Contraseña Usuario -->
+          <div class="col-12 " style="padding: 0 70px 0 70px;">
+            <label for="validationCustom02" class="form-label" >Contraseña</label>
+            <input type="password"  class="form-control" id="validationCustom02" required>
+            <div class="invalid-feedback">
+              Por favor, ingrese su contraseña.
+            </div>
+          </div>
+    
+          <div class="col-12">
+            <!-- Terminos y Condiciones -->
+            <div class="form-check ps-0 mt-1 ms-5 ps-5">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">&nbsp
+                 Acepta los términos y condiciones
+              </label>
+              <div class="invalid-feedback ms-5">
+                Debe estar de acuerdo antes de enviar.
+              </div>
+            </div>
+            <!-- BOton y Texto Registrarse -->
+            <span class="mt-2 me-4 pe-2 d-flex justify-content-end align-items-center">No tienes cuenta?  &nbsp <button
+                type="button" class="btn text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Registrarte</button></span>
+          </div>
+          <!-- Boton Iniciar Sesion -->
+          <div class="col-12 d-flex justify-content-center mb-2 pb-4 pt-3">
+            <a href="/dashboard/charla.html" class="btn btn-green"> Iniciar Sesion</a>
+          </div>
+    
+        </form>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FinModal Inicio Sesion -->
+<!-- Modal Registrarse -->
+
+<div class="modal fade text-dark " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="contenedores-modal position-relative ">
+
+  <!-- Modal Registrarse -->
+  <div id="modal-usuario-registro">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
+        <form class="needs-validation contenedor-registro rounded-3" action="/index.html" novalidate>              
+          <div class="row g-3  text-white  p-4 rounded-3 ">
+            <div class="w-100 d-flex justify-content-end ">
+              <button type="button" class="btn-close bg-light" style="width: 20px; height: 20px;" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <h3 class="text-center pb-3 text-dark">Regístrate</h3>
+
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label text-dark">Nombres</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label text-dark">Apellidos</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" required>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label text-dark">Nombre de Usuario</label>
+              <d class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="" required>
+              </d>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label text-dark">Correo</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label text-dark">Contraseña</label>
+              <input type="password" class="form-control" id="address" placeholder="" required>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label text-dark">Confirmar Contraseña</label>
+              <input type="password" class="form-control" id="address2" placeholder="" required>
+            </div>
+
+            <div class="col-12">
+              <label for="telefono" class="form-label text-dark">Telefono</label>
+              <input type="Number" class="form-control" id="telefono" placeholder="305 4321 5432" required>
+            </div>
+
+            <div class="col-12">
+              <label for="validationGenero" class="form-label text-dark">Genero</label>
+              <select class="form-select" id="validationGenero" aria-label="Default select example" required>
+                <option selected disable value="">Genero</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+              </select>
+            </div>
+
+            <div class="ms-2">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label text-dark" for="same-address">Recordar</label>
+            </div>
+
+            <button class="w-100 btn btn btn btn-green" type="submit" id="botton-registrar">Registrar</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Fin Modal Registrarse -->
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form class="needs-validation" action="" novalidate autocomplete="off">
+      <div class="modal-header">
+        <h4 class="modal-title">Datos Generales</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+
+          <div class="col-md-7 col-lg-8 text-secondary mx-auto">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label ">Nombre:</label>
+                  <input type="text" class="form-control bg-white border-green" id="firstName" placeholder="" value="" required>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Apellido:</label>
+                  <input type="text" class="form-control  bg-white border-green" id="lastName" placeholder="" value="" required>
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Direccion correo electronico</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text border-green">@</span>
+                    <input type="text" class="form-control  bg-white border-green" id="username" required>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Numero Telefono<span
+                      class="text-muted"></span></label>
+                  <input type="number" class="form-control  bg-white border-green" id="email" required>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Direccion:</label>
+                  <input type="text" class="form-control  bg-white border-green" id="address" required>
+                </div>
+                </div>    
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-green border-green">Guardar cambios</button>
+          </div>
+        </form>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Fin Nav -->
+<!-- Titulo -->
+<div class="position-relative d-inline-block w-100">
+  <img src="/img/imgnav.jpg" class="w-100 img-titulo-fondo" alt="">
+  <h1 class="text-titulo position-absolute text-center  w-100">SOLICITA TU CHARLA 
+    <div class=" d-flex justify-content-around pt-2">
+       <div class="bg-green p-1 w-25" ></div>
+       <div class="bg-green p-1 w-25" ></div>
+    </div>
+  </h1>
+</div>
+<!-- Fin Titulo -->
+  <!-- Profesionales -->
+  <section class="py-5">
+    <div class="d-flex justify-content-center">
+      <div class=" w-75 fs-5">
+<p class="text-center fw-semibold fs-3"> QUE BUSCAMOS</p> 
+<hr class="w-75 m-auto pb-4">
+<p class="text-center ">Promover espacios en los que se afiancen las habilidades sociales, emocionales y
+          académicas en pro de favorecer la adaptación estudiantil y la mejora de la calidad de vida de los
+          estudiantes y colaboradores del Centro de Teleinformatica y Produccion Industrial (CTPI).</p>
+      </div>
+    </div>
+    <div class="w-100 d-flex flex-wrap my-5">
+      <div class="text-center mx-auto mt-4">
+        <div class="">
+          <p class="fs-5 mb-2">Ana Maria Echeverry <br> Enfermera</p>
+          <img src="/img/psicologa1.jfif" class="img-profesionales" alt="" />
+        </div>
+      </div>
+      <div class="text-center mx-auto mt-4">
+        <div class="">
+          <p class="fs-5 mb-2">Angie Lorena Quintana <br> Psicóloga</p>
+          <img src="/img/psicologa2.jfif" class="img-profesionales" alt="" />
+        </div>
+      </div>
+      <div class="text-center mx-auto mt-4">
+        <div class="">
+          <p class="fs-5 mb-2">Jose Danilo Ortega <br> Psicólogo</p>
+          <img src="/img/psicologo1.webp" class="img-profesionales" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Profesionales -->
+<main class="text-center d-flex flex-column justify-content-center align-items-center" id="form-charla">
+  <p class="fs-3 fw-semibold w-50 ">SOLICITA TU CHARLA DE FORMA GRUPAL O PERSONAL CON UNO DE NUESTROS PROFESIONALES</p>
+  <div class="bg-green pt-1 w-25 "></div>
+  <form class="needs-validation w-50 " novalidate>
+    <div class="row g-2 my-2">
+        <div class="col-sm-12 mt-4 mt-md-5">
+            <input type="text" class="form-control border-green" id="firstName"
+               value="" placeholder="Nombre completo*" required>
+
+        </div>
+
+        <div class="col-sm-6 mt-4 mt-md-5">
+            <div class="input-group has-validation">
+                <input type="date" class="form-control border-green" id="fecha"
+                    required>
+
+            </div>
+        </div>
+
+        <div class="col-sm-6 mt-4 mt-md-5">
+            <input type="time" class="form-control border-green" id="motivo"
+                required>
+
+        </div>
+
+        <div class="col-md-12 mt-4 mt-md-5">
+            <select class="form-select col-md-12 border-green" id="validationCustom04" required>
+                <option selected disabled value=""> Selecciona una opcion...</option>
+                <option>Ana Maria Psicologa</option>
+                <option>Angie Lorena Enfermera</option>
+                <option>Jose Ortega Deportes</option>
+            </select>
+
+        </div>
+
+        <div class="col-sm-12 mt-4 mt-md-5">
+            <textarea type="text" class="form-control border-green" id="address2" rows="5"
+                placeholder="Motivo de su cita*" required></textarea>
+        </div>
+
+
+        <div class="col-md-12 my-4 mt-md-5">
+            <button type="submit" class="btn btn-green btn-lg">Solicitar</button>
+        </div>
+    </div>
+    </form>
+</main>
+    <!-- Inicio Footer -->
+    <footer>
+        <div class="container-fluid bg-color-blue px-5 pt-5">
+          <div class="row">
+            <div class="col-lg-5 mt-lg-0">
+              <div class="mx-4 te">
+                <p class="text-white fs-4 fw-semibold text-center">
+                  <img src="/img/icons/people-fill.svg" class="me-3" alt="iconnosotros" />ACERCA DE NOSOTROS
+                </p>
+                <hr class="text-white" />
+                <p class="text-muted1 fs-6">
+                  Es una estrategia institucional para contribuir en la
+                  permanencia y el desempeño exitoso de los aprendices de la
+                  entidad en su proceso formativo con enfoque territorial y
+                  diferencial.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-lg-0 mt-5">
+              <p class="fs-4 fw-semibold text-center text-white">
+                <img src="/img/icons/arrow-down-right-square.svg" class="me-3" alt="iconacceso" />ACCESO RAPIDO
+              </p>
+              <hr class="text-white" />
+              <div class="text-muted1 text-center">
+                <a class="nav-link" aria-current="page" href="/index.html">INICIO</a>
+                <a class="nav-link" href="/dashboard/conocenos.html">CONOCENOS</a>
+                <a class="nav-link" href="/dashboard/charla.html">CHARLA</a>
+                <a class="nav-link" href="/dashboard/cronograma.html">CRONOGRAMA</a>
+                <a class="nav-link" href="/dashboard/contactanos.html">CONTACTANOS</a>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-0 mt-md-0 mt-5">
+              <div class="ps-3">
+                <p class="fs-4 fw-semibold text-center text-white">
+                  <img src="/img/icons/clock.svg" class="me-3" alt="iconreloj" />HORARIO DE ATENCION
+                </p>
+                <hr class="text-white" />
+                <p class="d-flex justify-content-between text-muted1 fs-6">
+                  Lunes a Viernes:
+                  <span>8:00 AM A 12:00 AM <br />
+                    2:00 PM A 9:00 PM</span>
+                </p>
+                <br />
+                <p class="text-muted1 fs-6">
+                  No se atiende fines de semana y festivos
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr class="text-white mt-5" />
+          <div class="d-flex flex-wrap justify-content-center pb-3">
+            <a href="https://www.facebook.com/Bienestaralaprendizctpi" class="text-decoration-none"><img src="/img/icons/facebook.svg" class="me-2 icon"
+                alt="logofacebook" /></a>
+    
+            <a href="https://twitter.com/CTPIsenacauca" class="ms-4 text-decoration-none"><img src="/img/icons/twitter.svg" class="me-2 icon"
+                alt="logotwiter" /></a>
+    
+            <a href="https://instagram.com/ctpisenacauca?igshid=YmMyMTA2M2Y=" class="ms-4 text-decoration-none"><img src="/img/icons/instagram.svg" class="me-2 icon"
+                alt="logoinstagram" /></a>
+    
+            <a href="#" class="ms-4 text-decoration-none"><img src="/img/icons/whatsapp.svg" class="me-2 icon"
+                alt="logoWhatsaap" /></a>
+          </div>
+        </div>
+      </footer>
+      <!-- Fin Footer -->
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="/Bootstrap/js/form-validation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
